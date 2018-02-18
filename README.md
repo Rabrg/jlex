@@ -1,5 +1,5 @@
-java-lexical-analyzer
-=====================
+jlex
+====
 A lexical analyzer for Java source code written in Python
 
 ## Example
@@ -53,4 +53,4 @@ public class Example {
 | CLOSE_PAREN       | )              | 
 | SEMICOLON         | ;              | 
 | CLOSE_CURLY_BRACE | }              | 
-| CLOSE_CURLY_BRACE | }              |
+| CLOSE_CURLY_BRACE | }              | 
