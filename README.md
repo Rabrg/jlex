@@ -53,4 +53,4 @@ public class Example {
 | CLOSE_PAREN       | )              | 
 | SEMICOLON         | ;              | 
 | CLOSE_CURLY_BRACE | }              | 
-| CLOSE_CURLY_BRACE | }              | 
+| CLOSE_CURLY_BRACE | }              |
