@@ -7,6 +7,6 @@ class Token:
         self.type = type
 
     def __str__(self):
-        return self.type.name + '\t[' + str(self.begin) + ':' + str(self.end) + ']\t' + self.value
+        return self.type.name + '\t' + self.value
 
     __repr__ = __str__
