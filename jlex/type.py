@@ -43,5 +43,5 @@ class Type(Enum):
     CLOSE_CARET = "(>).*"
     OPEN_CARET = "(<).*"
     IDENTIFIER = "\\b([a-zA-Z]{1}[0-9a-zA-Z_]{0,31})\\b.*"
-    # DOUBLE_QUOTE = '"[^"\\]*(?:\\.[^"\\]*)*"'
+    STRING_LITERAL = '\"(\\.|[^\\"])*\"'
 

@@ -32,8 +32,10 @@ def seperate_token(input, begin):
         pattern = r'.{' + str(begin) + '}' + type.value
         match = re.match(pattern, input, re.DOTALL)
         if match:
-            lexema = match.group(1)
-            return Token(begin, begin + len(lexema), lexema, type)
+            end = match.end(1)
+            if type == Type.STRING_LITERAL:
+                end += 1
+            return Token(begin, end, input[begin:end], type)
     return None
 
 
