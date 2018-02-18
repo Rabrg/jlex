@@ -1,7 +1,8 @@
 from enum import Enum
 
 
-# TODO: ternary, four space indention, streams
+# TODO: ternary, four space indention, streams, operators
+# https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
 class Type(Enum):
     BLOCK_COMMENT = "(/\\*.*?\\*/).*"
     LINE_COMMENT = "(//(.*?)[\r$]?\n).*"
