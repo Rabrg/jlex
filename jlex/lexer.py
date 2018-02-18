@@ -20,8 +20,7 @@ def lex(input):
         index = token.end
         tokens.append(token)
     if index != len(input):
-        # raise LexicalError(input, 'Lexical error at position ' + str(index))
-        print("Shit")
+        raise LexicalError('Lexical error at position ' + str(index))
     return tokens
 
 
