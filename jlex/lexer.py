@@ -33,7 +33,7 @@ def seperate_token(input, begin):
         match = re.match(pattern, input, re.DOTALL)
         if match:
             end = match.end(1)
-            if type == Type.STRING_LITERAL:
+            if type == Type.STRING_LITERAL or type == Type.CHARACTER_LITERAL:
                 end += 1
             return Token(begin, end, input[begin:end], type)
     return None
@@ -47,5 +47,6 @@ if __name__ == '__main__':
     output = str()
     for token in tokens:
         output += token.value
-        print(token)
+        if token.type not in [Type.WHITE_SPACE, Type.NEW_LINE, Type.BLOCK_COMMENT, Type.LINE_COMMENT]:
+            print(token)
     # print('Output:\n', output)

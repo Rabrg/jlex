@@ -84,4 +84,5 @@ class Type(Enum):
     OPEN_CARET = "(<).*"
     IDENTIFIER = "\\b([a-zA-Z]{1}[0-9a-zA-Z_]{0,31})\\b.*"
     STRING_LITERAL = '\"(\\.|[^\\"])*\"'
+    CHARACTER_LITERAL = r"\'(\\.|[^\\'])*\'"
 
