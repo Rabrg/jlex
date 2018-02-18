@@ -37,16 +37,3 @@ def seperate_token(input, begin):
                 end += 1
             return Token(begin, end, input[begin:end], type)
     return None
-
-
-if __name__ == '__main__':
-    with open('../res/Test.java', 'r') as file:
-        input = file.read()
-    print('Input:\n', input)
-    tokens = lex(input)
-    output = str()
-    for token in tokens:
-        output += token.value
-        if token.type not in [Type.WHITE_SPACE, Type.NEW_LINE, Type.BLOCK_COMMENT, Type.LINE_COMMENT]:
-            print(token)
-    # print('Output:\n', output)
