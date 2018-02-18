@@ -1,5 +1,5 @@
-from jlex.type import Type
-from jlex.token import Token
+from dummy.type import Type
+from dummy.token import Token
 
 
 def get_atom(s, i):
