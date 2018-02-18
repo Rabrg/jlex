@@ -4,7 +4,7 @@ from enum import Enum
 class Type(Enum):
     BLOCK_COMMENT = "(/\\*.*?\\*/).*"
     LINE_COMMENT = "(//(.*?)[\r$]?\n).*"
-    WHITE_SPACE = "( ).*"
+    SPACE = "( ).*"
     OPEN_PAREN = "(\\().*"
     CLOSE_PAREN = "(\\)).*"
     SEMICOLON = "(;).*"
