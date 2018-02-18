@@ -12,6 +12,8 @@ class Type(Enum):
     COMMA = "(,).*"
     OPEN_CURLY_BRACE = "(\\{).*"
     CLOSE_CURLY_BRACE = "(\\}).*"
+    OPEN_BRACE = "(\\[).*"
+    CLOSE_BRACE = "(\\]).*"
     DOUBLE_CONSTANT = "\\b(\\d{1,9}\\.\\d{1,32})\\b.*"
     INT_CONSTANT = "\\b(\\d{1,9})\\b.*"
     VOID = "\\b(void)\\b.*"
