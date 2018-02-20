@@ -5,10 +5,10 @@ A lexical analyzer for Java source code written in Python
 ## Example
 ### Code
 ```python
-from jlex.lexer import lex
+from jlex.lexer import lex_string
 from jlex.type import Type
 
-tokens = lex(input)
+tokens = lex_string(input)
 
 for token in tokens:
     if token.type not in [Type.SPACE, Type.NEW_LINE]:

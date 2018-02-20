@@ -10,7 +10,7 @@ class LexicalError(Exception):
         self.message = message
 
 
-def lex(string):
+def lex_string(string):
     tokens = list()
     index = 0
     while index < len(string):
