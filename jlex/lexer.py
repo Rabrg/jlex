@@ -13,10 +13,10 @@ class LexicalError(Exception):
 def lex_source_file(fd):
     with open(fd, 'r') as file:
         data = file.read()
-    return lex_string(data)
+    return lex_source_string(data)
 
 
-def lex_string(string):
+def lex_source_string(string):
     tokens = list()
     index = 0
     while index < len(string):
