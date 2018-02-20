@@ -14,7 +14,7 @@ def lex(input):
     tokens = list()
     index = 0
     while index < len(input):
-        token = seperate_token(input, index)
+        token = separate_token(input, index)
         if token is None:
             break
         index = token.end
@@ -24,7 +24,7 @@ def lex(input):
     return tokens
 
 
-def seperate_token(input, begin):
+def separate_token(input, begin):
     if begin < 0 or begin >= len(input):
         raise IndexError(input, 'Index out of bounds: ' + begin)
     for type in Type:
