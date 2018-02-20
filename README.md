@@ -11,7 +11,7 @@ from jlex.type import Type
 tokens = lex(input)
 
 for token in tokens:
-    if token.type not in [Type.SPACE, Type.NEW_LINE, Type.BLOCK_COMMENT, Type.LINE_COMMENT]:
+    if token.type not in [Type.SPACE, Type.NEW_LINE]:
         print(token)
 ```
 
