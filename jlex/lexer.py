@@ -10,6 +10,12 @@ class LexicalError(Exception):
         self.message = message
 
 
+def lex_source_file(fd):
+    with open(fd, 'r') as file:
+        data = file.read()
+    return lex_string(data)
+
+
 def lex_string(string):
     tokens = list()
     index = 0
